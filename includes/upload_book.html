@@ -1,0 +1,32 @@
+<div class="upload_book" >
+	<h2 style="color:#000">Elibs - Upload Book</h2>
+	<form method="post" enctype="multipart/form-data" action="process.php?action=3">
+	<input type="text" name="booktitle" placeholder="booktitle"/>
+	<input type="text" name="author" placeholder="author name"/>
+	<input type="text" name="publisher" placeholder="publisher"/>
+	<input type="text" name="year" placeholder="year"/>
+	<textarea name="description" placeholder="short description about book, show on homepage"></textarea>
+	<textarea name="longdescription" placeholder="long description about book, show on popup page"></textarea>
+	<select>
+		<option>Category</option> 
+		<option name="school">school</option>
+  		<option name="magazine">magazine</option>
+  		<option name="cooking">cooking</option>
+  		<option name="technology">sport</option>
+  		<option name="automotive">science</option>
+  		<option name="automotive">science</option>
+	</select>
+
+	<label>Upload PDF file (max 10MB : pdf)
+	<input type="file" name="uploaded_book">
+	</label>
+
+	<label>Upload Cover (max 500KB : png, jpg, bmp) <input type="file" name="uploaded_cover">
+	</label>
+
+	<label class="checkbox">
+      <input type="checkbox">I agree <a href="#TOS" data-toggle="modal">terms and condition</a>
+    </label>
+	<button name="btn_uploadbook" style="width:100px; border-radius:0" class="btn btn-large btn-primary" type="submit" style="border-radius:0" onclick="show_uploadform()">Upload</button>
+	</form>
+</div>
